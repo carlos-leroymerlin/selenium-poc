@@ -3,7 +3,6 @@ package com.leroymerlin.stepdefinition;
 import com.leroymerlin.cucumber.TestContext;
 import com.leroymerlin.pageobject.LoginPage;
 import io.cucumber.java.en.Given;
-import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import org.junit.jupiter.api.Assertions;
 

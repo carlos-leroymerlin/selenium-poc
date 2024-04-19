@@ -19,11 +19,4 @@ public interface Waitable extends PageContainer {
         wait.until(ExpectedConditions.visibilityOfElementLocated(locator));
     }
 
-    default void waitUntilElementIsNotVisible(By locator) {
-        WebDriverWait wait = new WebDriverWait(getDriver(), Duration.ofSeconds(10));
-        wait.ignoring(NoSuchElementException.class);
-        wait.ignoring(StaleElementReferenceException.class);
-        wait.ignoring(InvalidArgumentException.class);
-        wait.until(ExpectedConditions.visibilityOfElementLocated(locator));
-    }
 }
