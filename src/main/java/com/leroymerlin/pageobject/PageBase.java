@@ -1,12 +1,9 @@
 package com.leroymerlin.pageobject;
 
-import com.leroymerlin.pageobject.helpers.Clickable;
-import com.leroymerlin.pageobject.helpers.Fillable;
-import com.leroymerlin.pageobject.helpers.PageContainer;
-import com.leroymerlin.pageobject.helpers.Waitable;
+import com.leroymerlin.pageobject.helpers.*;
 import org.openqa.selenium.WebDriver;
 
-public class PageBase implements PageContainer, Waitable, Fillable, Clickable {
+public class PageBase implements PageContainer, Waitable, Fillable, Clickable, Getable, Findable {
 
     protected WebDriver driver;
 

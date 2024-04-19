@@ -8,6 +8,7 @@ public class LoginPage extends PageBase {
     private static final By USERNAME_FIELD = By.xpath("//*[@data-test='username']");
     private static final By PASSWORD_FIELD = By.xpath("//*[@data-test='password']");
     private static final By LOGIN_BTN = By.xpath("//*[@id='login-button']");
+    private static final By ERROR_IMG = By.xpath("//*[@data-test='error']");
 
     public LoginPage(WebDriver driver) {
         super(driver);
@@ -24,6 +25,16 @@ public class LoginPage extends PageBase {
         fillElement(username, USERNAME_FIELD);
         fillElement("secret_sauce", PASSWORD_FIELD);
         clickOn(LOGIN_BTN);
+    }
+
+    public void incorrectLogin(String username, String password) {
+        fillElement(username, USERNAME_FIELD);
+        fillElement(password, PASSWORD_FIELD);
+        clickOn(LOGIN_BTN);
+    }
+
+    public boolean verifyNotLoggedIn() {
+        return isVisible(ERROR_IMG);
     }
 
 }
