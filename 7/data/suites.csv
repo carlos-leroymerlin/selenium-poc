@@ -1,0 +1,5 @@
+"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
+"passed","Mon May 13 14:07:59 GMT 2024","Mon May 13 14:08:01 GMT 2024","2312","","testing login page","","Test login with correct users","","Test login with correct users",""
+"passed","Mon May 13 14:08:07 GMT 2024","Mon May 13 14:08:08 GMT 2024","701","","testing login page","","Test negative login","","Test negative login",""
+"passed","Mon May 13 14:08:07 GMT 2024","Mon May 13 14:08:07 GMT 2024","689","","testing login page","","Test negative login","","Test negative login",""
+"passed","Mon May 13 14:08:01 GMT 2024","Mon May 13 14:08:07 GMT 2024","5762","","testing login page","","Test login with correct users","","Test login with correct users",""
